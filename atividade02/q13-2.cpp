@@ -1,6 +1,6 @@
-#include<stdio.h>
-#include<iostream>
-#include<stdlib.h>
+#include <stdio.h>
+#include <iostream>
+#include <stdlib.h>
 using namespace std;
 
 typedef struct noArv {
@@ -53,16 +53,10 @@ int contaNos(NoArv *raiz){
 
 }
 
-
-
-
 int main(){
-     NoArv *raiz = criaArvoere(1,
-            criaArvoere(2,  
-criaArvoreVazia(), criaArvoere(3, criaArvoreVazia(), criaArvoreVazia())),
-                            criaArvoere(3, 
-                    criaArvoere(5, criaArvoreVazia(), criaArvoreVazia()), criaArvoere(6, criaArvoreVazia(), criaArvoere(6, criaArvoreVazia(), criaArvoreVazia()))));
-
+     NoArv *raiz = criaArvoere(1, criaArvoere(2, criaArvoreVazia(), criaArvoere(3, criaArvoreVazia(), criaArvoreVazia())), criaArvoere(3, 
+        criaArvoere(5, criaArvoreVazia(), criaArvoreVazia()), criaArvoere(6, criaArvoreVazia(), criaArvoere(6, criaArvoreVazia(), criaArvoreVazia()))));
+    
     int total = contaNos(raiz);
     cout << total<<endl;
     
