@@ -58,17 +58,10 @@ int calculaAlturaArvore(NoArv *raiz){
 }
 
 
-
-
 int main(){
-     NoArv *raiz = criaArvoere(1,
-            criaArvoere(2,  
-criaArvoreVazia(), criaArvoere(3, criaArvoreVazia(), criaArvoreVazia())),
-                            criaArvoere(3, 
-                    criaArvoere(5, criaArvoreVazia(), criaArvoreVazia()), criaArvoere(6, criaArvoreVazia(), criaArvoere(6, criaArvoreVazia(), criaArvoreVazia()))));
+     NoArv *raiz = criaArvoere(1, criaArvoere(2, criaArvoreVazia(), criaArvoere(3, criaArvoreVazia(), criaArvoreVazia())), criaArvoere(3, 
+            criaArvoere(5, criaArvoreVazia(), criaArvoreVazia()), criaArvoere(6, criaArvoreVazia(), criaArvoere(6, criaArvoreVazia(), criaArvoreVazia()))));
 
-   
-    
     cout <<"altura: " << calculaAlturaArvore(raiz);
     return 0;
 }
